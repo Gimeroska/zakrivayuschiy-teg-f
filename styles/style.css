@@ -97,10 +97,10 @@
   mix-blend-mode: hard-light;
 }
 
-@supports (--webkit--text-stroke) or (text-stroke) {
+@supports (-webkit-text-stroke: 1px #fff) or (text-stroke: 1px #fff) {
   .image-label {
-    --webkit--text-stroke: 1px var(--label-text-shadow-color);
-    text-stroke: 1px var(--label-text-shadow-color);
+    -webkit-text-stroke: 1px var(--label-text-shadow-color, #fff);
+    text-stroke: 1px var(--label-text-shadow-color, #fff);
     text-shadow: none;
   }
 }
