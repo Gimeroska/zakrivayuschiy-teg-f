@@ -75,7 +75,7 @@
   color: var(--text-color);
   inline-size: 100%;
   border-bottom: 2px solid #000;
-  font-weight: var(--main-font-title-weight);
+  font-variation-settings: "wght" var(--main-font-title-weight);
   font-size: 18px;
 }
 
@@ -95,6 +95,14 @@
   text-shadow: 1px 1px 0 var(--label-text-shadow-color), -1px -1px 0 var(--label-text-shadow-color), 1px -1px 0 var(--label-text-shadow-color), -1px 1px 0 var(--label-text-shadow-color);
   font-size: 14px;
   mix-blend-mode: hard-light;
+}
+
+@supports (--webkit--text-stroke) or (text-stroke) {
+  .image-label {
+    --webkit--text-stroke: 1px var(--label-text-shadow-color);
+    text-stroke: 1px var(--label-text-shadow-color);
+    text-shadow: none;
+  }
 }
 
 .card__image {
@@ -144,8 +152,8 @@
 }
 
 .card__text {
+  font-variation-settings: "wght" var(--main-font-text-weight);
   color: var(--text-color);
-  font-weight: var(--main-font-text-weight);
   font-size: 18px;
 }
 
