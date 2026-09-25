@@ -1,9 +1,9 @@
 
-<svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+<svg xmlns="http://www.w3.org/2000/svg">
 	<symbol
 		id="icon-save"
 		viewBox="0 0 39 39"
-		xmlns="http://www.w3.org/2000/svg"
+    	shape-rendering="crispEdges"
 	>
 		<path
 			fill="currentColor"

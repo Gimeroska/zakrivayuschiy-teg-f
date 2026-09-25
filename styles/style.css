@@ -317,10 +317,6 @@
   transform: scaleX(1);
 }
 
-#icon-save {
-  shape-rendering: crispEdges;    /* подсказал ии, без этого svg изображение отрисовывалось не правильно при изменение ее цвета с черного на белый */
-}
-
 :is(.button-effect, .card__icon-button):focus {
   outline: none;
 }
