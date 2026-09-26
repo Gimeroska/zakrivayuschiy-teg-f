@@ -19,7 +19,13 @@
 
     --block-inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);   /* использовал font-size clamp() generator */
     --block-block-size: clamp(7.625rem, 7.4489rem + 0.7512vw, 8.125rem);        /* использовал font-size clamp() generator */
+    --border-width: 2px;
 
+    --background-color__dialog-backdrop: rgb(0 0 0 / 0.75);
     --contour-color: #000;
     --animation-fill-color: #ff0000;
+
+    --like-icon__hover-fill: #000;
+    --background-collor__button-hover: #000;
+    --box-shadow-collor__button-focus: #000;
 }
